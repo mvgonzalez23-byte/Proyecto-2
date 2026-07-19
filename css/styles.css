@@ -105,13 +105,25 @@ html[data-theme="dark"] .login-screen {
 .brand-mark{
   display:flex; align-items:center; gap:10px; margin-bottom:28px;
 }
-.brand-mark .disc{
-  width:34px; height:34px; border-radius:50%;
+.brand-mark .disc,
+.topbar .brand .disc {
+  border-radius: 50%;
   background:
     radial-gradient(circle at center, var(--bg) 0 14%, transparent 15%),
     conic-gradient(from 0deg, var(--accent), var(--gold), var(--accent));
-  flex:none;
+  flex: none;
 }
+
+.brand-mark .disc {
+  width: 34px;
+  height: 34px;
+}
+
+.topbar .brand .disc {
+  width: 22px;
+  height: 22px;
+}
+
 .brand{ font-size:1.15rem; }
 .brand small{ display:block; font-family:var(--font-body); font-weight:400; color:var(--text-dim); font-size:.7rem; letter-spacing:.08em; text-transform:uppercase; }
 
